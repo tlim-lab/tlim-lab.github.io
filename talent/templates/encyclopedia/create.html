@@ -1,0 +1,32 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Create New Page
+{% endblock %}
+
+{% block body %}
+    <h1>Create New Page</h1>
+    {% if exist %}
+        <div class="alert alert-danger" role="alert">
+            {{ form }}
+        </div>
+        <br><a href='/wiki/create/'><input class="btn btn-primary" type="submit" value="Back"></a> 
+    {% else %}
+        <form action="{% url 'encyclopedia:create' %}" method="post" >
+            {% csrf_token %}
+            {{ form }}
+
+            <!--
+            cara lain bikin from dan textarea [manual]:
+
+            <label for="entry">Entry:</label>
+            <input class=query name="entry" type="text">
+
+            <label for="content">Content:</label>
+            <textarea name="content">
+            </textarea>
+            -->
+            <br><input type="Submit" class="btn btn-primary"/>
+        </form>
+    {% endif %}
+{% endblock %}
