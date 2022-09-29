@@ -1,0 +1,27 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Edit Page
+{% endblock %}
+
+{% block body %}
+    <h1>Edit Page</h1>
+    <form method="post">
+
+        {% csrf_token %}
+        {{ form }}
+
+        <!--
+        cara lain bikin from dan textarea [manual]:
+
+        <label for="entry">Entry:</label>
+        <input class=query name="entry" type="text">
+
+        <label for="content">Content:</label>
+        <textarea name="content">
+        </textarea>
+        -->
+
+       <br> <a href='/wiki/edit/{{title}}'><input type="Submit" class="btn btn-primary"/></a>
+    </form>
+{% endblock %}
