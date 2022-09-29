@@ -2,65 +2,31 @@
 
 <html lang="en">
     <head>
-        <title>{% block title %}{% endblock %}</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link href="{% static 'encyclopedia/styles.css' %}" rel="stylesheet">
-        <link rel="icon"href="{% static 'android-chrome-512x512.png' %}">
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+
+        <link href="{{ url_for('static', filename = 'favicon-96x96.png') }}" rel="icon" type="image/png" sizes="96x96">favicon-96x96.png
+
+        <title>BRAXTER</title>
+
     </head>
-    <body>
-        <nav class="navbar navbar-expand-lg" style="background-color:#04497c; padding-right: 2cm;">
+    <body style="background-color:black;">
+        <nav>
+            <h1 class ="braxter"><a href="/" style="color: #ffd651">BRAXTER</a> </h1>
 
-            <div>
-                <ul class="nav">
-                    <li class="navbar-brand" style="color: white;">PermataBank &ensp;</li>
-                </ul>
-            </div>
+            <a href="/" style="color: white">
+                <button type="abt" class ="navigation1 btn btn-outline-light">About us</button></a>
 
-            <div>
-                {% if user.is_authenticated %}
-                    <a class="navbar-item" href="{% url 'encyclopedia:logout_view' %}" style="color: white; ">
-                        | &emsp; Log Out &emsp;
-                    </a>
-                    <a class="navbar-item" href="{% url 'encyclopedia:index' %}" style="color: white; ">
-                        | &emsp; <strong>{{ user.username }} </strong> &emsp;
-                    </a>
-                {% else %}
-                    <a class="navbar-item" href="{% url 'encyclopedia:login_view' %}" style="color: white;  ">
-                        | &emsp; Log In
-                    </a>
-                {% endif %}
-            </div>
-            
+            <a href="/products" style="color: white">
+                <button type="prod" class ="navigation2 btn btn-outline-light">Products</button></a>
+
+            <a href="/contacts" style="color: white">
+                <button type="cont" class ="navigation3 btn btn-outline-light">Contacts</button></a>
         </nav>
-        
-        <div class="row">
-            <div id = "sidebar" class="sidebar col-lg-2 col-md-3" >
-                <h2>Rosetta</h2>
-                <form action="{% url 'encyclopedia:search' %}" method="GET" >
-                    <input class="search" type="text" name="q" placeholder="Search Rosetta">
-                </form>
-                <div>
-                    <a href="{% url 'encyclopedia:index' %}" style="color: rgb(13, 78, 157);">Home</a>
-                </div>
-                {% if user.is_authenticated %}
-                    <div>
-                        <a href="{% url 'encyclopedia:create' %}" style="color: rgb(13, 78, 157);">Create New Page</a>
-                    </div>
-                {% endif %}
-                <div>
-                    <a href="{% url 'encyclopedia:randomPage' %}" style="color: rgb(13, 78, 157);">Random Page</a>
-                </div>
-                <div>
-                    <a href="{% url 'encyclopedia:about' %}" style="color: rgb(13, 78, 157);">About Us</a>
-                </div>
-                {% block nav %}
-                {% endblock %}
-            </div>
-            <div class="main col-lg-10 col-md-9">
-                {% block body %}
-                {% endblock %}
-            </div>
-        </div>
-
+        <main class="navigation4">
+            {% block main %}{% endblock %}
+        </main>
     </body>
 </html>
