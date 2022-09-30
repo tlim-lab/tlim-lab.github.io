@@ -85,7 +85,7 @@ textarea {
     animation-duration: 3s;
 }
 
-#pot {
+#picture {
     bottom: 15%;
     position: absolute;
     animation-fill-mode: linear infinite;
@@ -104,8 +104,3 @@ textarea {
       left: 0;    
     }
   }
-
-#picture {
-    animation-name: show;
-    animation-duration: 3s;
-}
