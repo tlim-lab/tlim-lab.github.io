@@ -28,15 +28,13 @@ textarea {
 }
 
 .index {
-    box-shadow: 0 9px #999;
+    transition: transform .2s;
 }
 
-.index:hover {background-color: #3e8e41}
-
-.index:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+.index:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
 }
 
 .sidebar h2 {
