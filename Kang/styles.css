@@ -80,30 +80,8 @@ textarea {
     }
 }
 
-#about, #about1 {
+#about, #about1, #picture, #picture1 {
     animation-name: show;
     animation-duration: 3s;
 }
-
-#picture, #picture_group {
-    bottom: 15%;
-    position: absolute;
-    -webkit-animation: linear infinite;
-    -webkit-animation-name: run;
-    -webkit-animation-duration: 3s;
-  }
   
-@-webkit-keyframes run {
-    0% {
-      left: -100%;
-      opacity: 0;
-    }
-    50% {
-      left: -75%;
-      opacity: 0;
-    }
-    100% {
-      left: 0%;  
-      opacity: 1;  
-    }
-  }
