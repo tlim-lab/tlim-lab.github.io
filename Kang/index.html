@@ -2,25 +2,38 @@
 
 <html lang="en">
     <head>
-        <title>Kang</title>
+        <title>Talent</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/minty/bootstrap.min.css" integrity="sha384-H4X+4tKc7b8s4GoMrylmy2ssQYpDHoqzPa9aKXbDwPoPUA3Ra8PA5dGzijN+ePnH" crossorigin="anonymous">
         <link href="styles.css" rel="stylesheet">
-        <link rel="icon"href="android-chrome-512x512.png">
+        <link rel="icon"href="{% static 'android-chrome-512x512.png' %}">
     </head>
+    <body>
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-right: 2cm;">
 
-<div class="text-center">
-    <h1 id="welcome">Welcome to Kang !</h1>
-</div>
-<div class="text-center">
-    <h5 id="about">About Us</h5>
-    <p id="about1">
-        Online Resume by CodingCoco | <a href="resume.html">Talent Lim</a>
-    </p><br>
-</div>
+            <div>
+                <ul class="nav">
+                    <li class="navbar-brand"><a href="index.html">Kang</a></li> 
+                </ul>
+            </div>
 
-<footer class="small text-center text-muted">
-    Further information on <a href="https://www.linkedin.com/in/talentlim">LinkedIn</a>.
-</footer>
+            <div>
+            </div>
+            
+        </nav>-->
+        
+        <div class="row">
+            <div id = "sidebar" class="sidebar col-lg-2 col-md-3" style="background-color: #d2fcfb;" >
+            </div>
 
-<!-- <script src="about.js"></script>  -->
+            <div class="main col-lg-10 col-md-9" style="background-color: #fdffd7;">
+               <div id="picture">
+                    <img src="IMG_0036.JPG" alt="My Picture" width="512" height="683">
+                </div>
+               <h4>Talent Lim</h4>
+               <footer class="small text-center text-muted">
+                Further information on <a href="https://www.linkedin.com/in/talentlim">LinkedIn</a>.
+            </footer>
+            </div>
+        </div>
+    </body>
 </html>
