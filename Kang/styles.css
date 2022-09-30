@@ -27,20 +27,58 @@ textarea {
     padding-top: 40px;
 }
 
-.index {
-    transition: transform .2s;
+
+#barcon:hover {
+    animation: wiggle;
+    animation-duration: 1s;
 }
 
-.index:hover {
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2); 
+@keyframes wiggle {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    20% { transform: translate(-3px, 0px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    80% { transform: translate(-1px, -2px) rotate(1deg); }
 }
 
 .sidebar h2 {
     margin-top: 5px;
 }
 
+#barcon .tooltiptext {
+  visibility: hidden;
+  width: 700px;
+  background-color: #fcd46e;
+  color: black;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px 9;
+  
+  /* Position the tooltip */
+  /*position: relative;
+  z-index: 2;
+  top: 5px;
+  left: 40%;*/
+}
+
+#barcon:hover .tooltiptext {
+  visibility: visible;
+}
+
+#desc .tooltiptext {
+    visibility: hidden;
+    width: 100%;
+    background-color: #fcd46e;
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 9;
+    
+  }
+  
+#desc:hover .tooltiptext {
+    visibility: visible;
+}
 
 @keyframes grow {
     from {
