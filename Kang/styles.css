@@ -80,7 +80,32 @@ textarea {
     }
 }
 
-#about, #about1, #picture {
+#about, #about1 {
+    animation-name: show;
+    animation-duration: 3s;
+}
+
+#pot {
+    bottom: 15%;
+    position: absolute;
+    animation-fill-mode: linear infinite;
+    animation-name: run;
+    animation-duration: 3s;
+  }
+  
+@keyframes run {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: 0;    
+    }
+  }
+
+#picture {
     animation-name: show;
     animation-duration: 3s;
 }
