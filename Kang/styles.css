@@ -24,7 +24,8 @@ textarea {
 .sidebar {
     background-color: #fdffd7;
     height: 100vh;
-    padding-top: 20px;
+    padding-top: 30px;
+    padding-right: 10px;
 }
 
 .sidebar h2 {
