@@ -85,7 +85,7 @@ textarea {
     animation-duration: 3s;
 }
 
-#picture {
+#picture, #picture_group {
     bottom: 15%;
     position: absolute;
     -webkit-animation: linear infinite;
