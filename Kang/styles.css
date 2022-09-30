@@ -88,12 +88,12 @@ textarea {
 #picture {
     bottom: 15%;
     position: absolute;
-    animation-fill-mode: linear infinite;
-    animation-name: run;
-    animation-duration: 3s;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 3s;
   }
   
-@keyframes run {
+@-webkit-keyframes run {
     0% {
       left: 0;
     }
@@ -103,4 +103,4 @@ textarea {
     100% {
       left: 0;    
     }
-}
+  }
