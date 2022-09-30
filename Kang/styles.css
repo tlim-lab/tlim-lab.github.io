@@ -80,7 +80,7 @@ textarea {
     }
 }
 
-#about, #about1, #picture, #picture1 {
+#about, #about1, #picture {
     animation-name: show;
     animation-duration: 3s;
 }
