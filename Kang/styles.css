@@ -17,11 +17,12 @@ textarea {
     width: 80%;
 }
 
-.main {
+#main {
     padding: 10px;
+    height: 100vh;
 }
 
-.sidebar {
+#sidebar {
     background-color: #fdffd7;
     height: 100vh;
     padding-top: 40px;
@@ -155,7 +156,15 @@ textarea {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
- }
+}
+
+   
+.button:hover{
+    background-color: #93f5e7;
+    box-shadow: 0px 15px 20px #59ecee;
+    color: #fff;
+    transform: translateY(-7px);
+}
 
 .contact{
     /*text-transform: uppercase;*/
@@ -170,15 +179,33 @@ textarea {
     cursor: pointer;
     outline: none;
 }
-  
-.button:hover{
+
+.contact:hover{
     background-color: #93f5e7;
     box-shadow: 0px 15px 20px #59ecee;
     color: #fff;
     transform: translateY(-7px);
 }
 
-.contact:hover{
+.button-resume{
+    width: 200px;
+    height: 40px;
+    font-family: sans-serif;
+    font-size: 15px;
+    /*text-transform: uppercase;*/
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #59ddee;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.button-resume:hover{
     background-color: #93f5e7;
     box-shadow: 0px 15px 20px #59ecee;
     color: #fff;
@@ -197,4 +224,6 @@ textarea {
     padding: 30px;
     font-size: 19px;
 
-  }
+}
+
+/*style="color:#00478f"*/
