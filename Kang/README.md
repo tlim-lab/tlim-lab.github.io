@@ -11,3 +11,5 @@
                         it has been awhile since I used my HTML, and CSS skills. Therefore, to keep in touch with the skills
                         I built this web for fun. </i>
                     </p>
+See my web profile: (Use desktop to see more)
+https://tlim-lab.github.io/Kang/
