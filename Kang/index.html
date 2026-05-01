@@ -1,170 +1,150 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <title>Talent Lim</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link href="styles.css" rel="stylesheet">
-        <link rel="icon"href="android-chrome-512x512.png">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>Talent Lim</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="android-chrome-512x512.png">
+  <link href="styles.css" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLCRQC13B7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KLCRQC13B7');
+  </script>
+</head>
+<body>
 
-       <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLCRQC13B7"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <!-- ── Desktop Sidebar ─────────────────────────────── -->
+  <aside class="sidebar">
+    <div class="sidebar-brand">KANG <span>工</span></div>
+    <ul class="sidebar-nav">
+      <li><a href="index.html" class="active"><img src="eco-house.png" alt="">Home</a></li>
+      <li><a href="experience.html"><img src="farming.png" alt="">Quest Log</a></li>
+      <li><a href="dashboard.html"><img src="watering-can.png" alt="">Analytics</a></li>
+      <li><a href="contact.html"><img src="mushrooms.png" alt="">Contact</a></li>
+      <li><a href="about.html"><img src="android-chrome-512x512.png" alt="">Lore</a></li>
+    </ul>
+    <div class="sidebar-footer">tlim-lab.github.io/Kang</div>
+  </aside>
 
-        gtag('config', 'G-KLCRQC13B7');
-        </script>
-    </head>
-    
-    <body>
-        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-right: 2cm;">
+  <!-- ── Mobile Bottom Nav ────────────────────────────── -->
+  <nav class="mobile-nav">
+    <ul>
+      <li><a href="index.html" class="active"><img src="eco-house.png" alt=""><span>Home</span></a></li>
+      <li><a href="experience.html"><img src="farming.png" alt=""><span>Quests</span></a></li>
+      <li><a href="dashboard.html"><img src="watering-can.png" alt=""><span>Stats</span></a></li>
+      <li><a href="contact.html"><img src="mushrooms.png" alt=""><span>Contact</span></a></li>
+      <li><a href="about.html"><img src="android-chrome-512x512.png" alt=""><span>Lore</span></a></li>
+    </ul>
+  </nav>
 
-            <div>
-                <ul class="nav">
-                    <li class="navbar-brand"><a href="index.html">Kang</a></li> 
-                </ul>
-            </div>
+  <!-- ── Main Content ──────────────────────────────────── -->
+  <main class="page-content">
 
-            <div>
-            </div>
-            
-    </nav>-->
-        <div class="row">
-            
-            <div id = "sidebar" class="sidebar col-lg-1 col-md-1" style="background-color: #d2fcfb">
-                <div id="hide-mobile">
-                <ul id="barcon"><a href="index.html">
-                    <img alt="Index Page" src="eco-house.png"
-                    width="50" height="50">
-                    <span class="tooltiptext">Home</span>
-                </a></ul>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-photo-wrap fade-in">
+        <img class="profile-photo" src="IMG_0036.jpeg" alt="Talent Lim">
+      </div>
 
-                <br><ul id="barcon"><a href="experience.html">
-                    <img alt="Experience Page" src="farming.png"
-                    width="50" height="50">
-                    <span class="tooltiptext">Experience</span>
-                </a></ul>
-
-                <br><ul id="barcon"><a href="dashboard.html">
-                    <img alt="Dashboard Page" src="watering-can.png"
-                    width="50" height="50"><br>
-                    <span class="tooltiptext">Dashboard</span>
-                </a></ul>
-
-                <br><ul id="barcon"><a href="contact.html">
-                    <img alt="Contact Page" src="mushrooms.png"
-                    width="50" height="50">
-                    <span class="tooltiptext">Contact</span>
-                </a></ul>
-
-                <br><ul id="barcon"><a href="about.html">
-                    <img alt="About Page" src="android-chrome-512x512.png"
-                    width="50" height="50">
-                    <span class="tooltiptext">About Us</span>
-                </a></ul>
-                </div>
-
-                <div class="flex-container" id="hide-desktop"> 
-                <div>
-                <img alt="Home Page" src="eco-house.png"
-                width="200" height="200"></div>
-                </div>
-                
-
-                <div id="hide-desktop">
-                    <input id="menu__toggle" type="checkbox" />
-                    <label class="menu__btn" for="menu__toggle">
-                    <span></span>
-                    </label>
-                
-                    <ul class="menu__box">
-
-                    <li><a href="index.html">
-                    <img alt="Index Page" src="eco-house.png"
-                    width="40" height="40">
-                    <br>
-                    <span style="color: black; font-size: small;">Home</span>
-                    </a></li> <br>
-
-                    <li><a href="experience.html">
-                    <img alt="Experience Page" src="farming.png"
-                    width="40" height="40"><br>
-                    <span style="color: black; font-size: small;">Experience</span>
-                    </a></li><br>
-
-                    <li><a href="dashboard.html">
-                    <img alt="Dashboard Page" src="watering-can.png"
-                    width="40" height="40"><br>
-                    <span style="color: black; font-size: small;">Dashboard</span>
-                    </a></li></br>
-
-                    <li><a href="contact.html">
-                    <img alt="Contact Page" src="mushrooms.png"
-                    width="40" height="40"><br>
-                    <span style="color: black; font-size: small;">Contact</span>
-                    </a></li><br>
-
-                    <li><a href="about.html">
-                    <img alt="About Page" src="android-chrome-512x512.png"
-                    width="40" height="40"><br>
-                    <span style="color: black; font-size: small;">About</span>
-                    </a></li><br>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="hide-mobile"class="main col-lg-4 col-md-3" style="background-color: #fdffd7">
-               <div>
-                    <img src="IMG_0036.JPG" alt="My Picture" width="512" height="683"
-                    style="position: fixed; bottom:0;">
-                </div>
-            </div>
-
-            <div class="main col-lg-7 col-md-6 col-xs-3" style="background-color: #fdffd7;padding:70px; padding-top:120px">
-                <h1>Hello &#128075; I'm Talent Lim</h1>
-                <h4>Data Analyst, currently in &#128205; Melbourne, Australia</h4>
-                <br><br>
-                
-                <p id="desc">
-                    Graduated with a Bachelor's degree in Accounting.
-                    <br>Self learn coding with the help of a friend 
-                    <a href="https://www.linkedin.com/in/justin-trisno-25b20514b">Justin</a>, 
-                    whom I met during my internship.
-                    
-                    <br><br>Currently pursuing Master of Information Technology degree at Monash University.
-                    <br>Worked as a Data Analyst at PermataBank, 
-                    analysing portfolio and creating insights.
-                    <br>Favorite tools for analytics include
-                    <strong><i>SAS, SQL, Excel, and Python (Jupyter Notebook)</i></strong>.
-
-                    <br><br>When I turn off my laptop, I love to &#128218; read, &#127939; work out, 
-                    and play some sports like &#127992; badminton.
-
-                    <br><br>There are more of my projects, and detail of work experiences available 
-                    <a href="experience.html">here</a>.
-                </p>
-                
-                <h5>
-                    <!--<br><br>Open to opportunities &#127759; in Southeast Asia, East Asia, and Australia.-->
-                    <br>Open for discussions, and new connections &#127759;.
-                    
-                    <div id="wrap">
-                        <br><a href="contact.html">
-                        <button class="button">Reach out to me</button>
-                        </a>
-                    </div>
-                </h5>
-
-                <br>
-                <footer class="small text-center text-muted">
-                    For windows user, please zoom out your browser
-                    <br>Kang by CodingCoco <a href="https://www.linkedin.com/in/talentlim">Talent Lim</a>
-                </footer>
-            </div>
+      <div class="hero-text">
+        <div class="hero-name fade-in fade-in-d1">
+          TALENT LIM<span class="cursor"></span>
         </div>
-    </body>
+        <div class="hero-tagline fade-in fade-in-d2">
+          &#128205; Data Analyst &amp; IT Professional · Melbourne, AU
+        </div>
+        <div class="hero-bio fade-in fade-in-d3">
+          <p>
+            3+ years in data management, analytics, and team leadership.
+            Currently a <strong>Team Lead</strong> at AI-Levate, heading a team of 10 across 4 concurrent
+            projects in AI, cloud, and software development.
+          </p>
+          <p>
+            Pursuing a <strong>Master of Information Technology</strong> at Monash University.
+            Holds AWS Solutions Architect, AI Practitioner &amp; Cloud Practitioner certifications,
+            alongside Databricks Data Engineer Associate.
+          </p>
+          <p>
+            When the laptop is closed: &#128218; reading, &#127939; working out,
+            and &#127992; badminton.
+          </p>
+        </div>
+        <div class="btn-row fade-in fade-in-d4">
+          <a href="contact.html" class="btn btn-teal">&#9993; Reach Out</a>
+          <a href="experience.html" class="btn btn-yellow">&#128196; Quest Log</a>
+          <a href="Resume - Talent Lim.pdf" class="btn btn-yellow">&#11015; Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills-section fade-in fade-in-d4">
+      <div class="section-title">&#127918; Skills &amp; Loadout</div>
+      <p class="section-subtitle">Tools, technologies, and domains I work with</p>
+
+      <div class="skill-group">
+        <div class="skill-group-label">&#9729; Cloud &amp; Data Engineering</div>
+        <div class="badge-wrap">
+          <span class="badge b-orange">AWS Solutions Architect</span>
+          <span class="badge b-orange">AWS AI Practitioner</span>
+          <span class="badge b-orange">AWS Cloud Practitioner</span>
+          <span class="badge b-red">Azure Databricks</span>
+          <span class="badge b-mauve">TensorFlow</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-label">&#128202; Analytics &amp; BI</div>
+        <div class="badge-wrap">
+          <span class="badge b-blue">Python</span>
+          <span class="badge b-blue">SQL</span>
+          <span class="badge b-blue">SAS</span>
+          <span class="badge b-blue">Power BI</span>
+          <span class="badge b-teal">Google Analytics</span>
+          <span class="badge b-teal">Google Data Studio</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-label">&#128187; Web &amp; Dev</div>
+        <div class="badge-wrap">
+          <span class="badge b-green">HTML</span>
+          <span class="badge b-green">CSS</span>
+          <span class="badge b-green">JavaScript</span>
+          <span class="badge b-green">Git</span>
+          <span class="badge b-green">Django</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-label">&#127757; Languages</div>
+        <div class="badge-wrap">
+          <span class="badge b-yellow">English · Full Professional</span>
+          <span class="badge b-yellow">Mandarin · Casual</span>
+          <span class="badge b-yellow">Indonesian / Bahasa · Native</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-label">&#127775; Soft Skills</div>
+        <div class="badge-wrap">
+          <span class="badge b-mauve">Leadership</span>
+          <span class="badge b-mauve">Business Analysis</span>
+          <span class="badge b-mauve">Public Speaking</span>
+          <span class="badge b-mauve">Stakeholder Management</span>
+          <span class="badge b-mauve">Communication</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      Kang 工 &mdash; built by <a href="https://www.linkedin.com/in/talentlim">Talent Lim</a>
+    </footer>
+  </main>
+
+</body>
 </html>

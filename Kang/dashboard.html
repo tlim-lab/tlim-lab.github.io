@@ -1,116 +1,71 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <title>Dashboard</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link href="styles.css" rel="stylesheet">
-        <link rel="icon"href="android-chrome-512x512.png">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>Analytics · Kang</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="android-chrome-512x512.png">
+  <link href="styles.css" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLCRQC13B7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KLCRQC13B7');
+  </script>
+</head>
+<body>
 
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLCRQC13B7"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <!-- ── Desktop Sidebar ─────────────────────────────── -->
+  <aside class="sidebar">
+    <div class="sidebar-brand">KANG <span>工</span></div>
+    <ul class="sidebar-nav">
+      <li><a href="index.html"><img src="eco-house.png" alt="">Home</a></li>
+      <li><a href="experience.html"><img src="farming.png" alt="">Quest Log</a></li>
+      <li><a href="dashboard.html" class="active"><img src="watering-can.png" alt="">Analytics</a></li>
+      <li><a href="contact.html"><img src="mushrooms.png" alt="">Contact</a></li>
+      <li><a href="about.html"><img src="android-chrome-512x512.png" alt="">Lore</a></li>
+    </ul>
+    <div class="sidebar-footer">tlim-lab.github.io/Kang</div>
+  </aside>
 
-        gtag('config', 'G-KLCRQC13B7');
-        </script>
-    </head>
+  <!-- ── Mobile Bottom Nav ────────────────────────────── -->
+  <nav class="mobile-nav">
+    <ul>
+      <li><a href="index.html"><img src="eco-house.png" alt=""><span>Home</span></a></li>
+      <li><a href="experience.html"><img src="farming.png" alt=""><span>Quests</span></a></li>
+      <li><a href="dashboard.html" class="active"><img src="watering-can.png" alt=""><span>Stats</span></a></li>
+      <li><a href="contact.html"><img src="mushrooms.png" alt=""><span>Contact</span></a></li>
+      <li><a href="about.html"><img src="android-chrome-512x512.png" alt=""><span>Lore</span></a></li>
+    </ul>
+  </nav>
 
+  <!-- ── Main Content ──────────────────────────────────── -->
+  <main class="page-content">
+    <div class="section-title fade-in">&#128202; Analytics Dashboard</div>
+    <p class="section-subtitle fade-in">Live website traffic data collected via Google Analytics &amp; visualised in Google Data Studio</p>
 
-    <body>
-        
-        <div class="row">
-            
-            <div id = "sidebar" class="sidebar col-lg-1 col-md-1" style="background-color: #d2fcfb">
-                <div id="hide-mobile">
-                <ul id="barcon"><a href="index.html">
-                    <img alt="Index Page" src="eco-house.png"
-                    width="50" height="50">
-                    <span class="tooltiptext">Home</span>
-                </a></ul>
+    <div class="dashboard-wrap fade-in fade-in-d1">
+      <iframe
+        src="https://datastudio.google.com/embed/reporting/7810df7c-22b7-4a98-b2ad-b5feb237c827/page/FgE7C"
+        allowfullscreen
+        title="Kang Analytics Dashboard">
+      </iframe>
+    </div>
 
-                <br><ul id="barcon"><a href="experience.html">
-                    <img alt="Experience Page" src="farming.png"
-                    width="50" height="50">
-                    <span class="tooltiptext">Experience</span>
-                </a></ul>
+    <div class="card c-teal fade-in fade-in-d2" style="margin-top:24px">
+      <div style="font-family:'VT323',monospace; font-size:20px; color:var(--teal); margin-bottom:8px">&#128202; Also on Tableau</div>
+      <p style="font-size:14px; color:var(--text);">
+        A complementary <a href="https://public.tableau.com/views/EventsTracker/KangEventsCount?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link">Tableau dashboard</a>
+        was created by downloading raw event data via the Google Analytics API — showing click-level event tracking across all pages.
+      </p>
+    </div>
 
-                <br><ul id="barcon"><a href="dashboard.html">
-                    <img alt="Dashboard Page" src="watering-can.png"
-                    width="50" height="50"><br>
-                    <span class="tooltiptext">Dashboard</span>
-                </a></ul>
+    <footer class="page-footer">
+      Kang 工 &mdash; built by <a href="https://www.linkedin.com/in/talentlim">Talent Lim</a>
+    </footer>
+  </main>
 
-                <br><ul id="barcon"><a href="contact.html">
-                    <img alt="Contact Page" src="mushrooms.png"
-                    width="50" height="50">
-                    <span class="tooltiptext">Contact</span>
-                </a></ul>
-
-                <br><ul id="barcon"><a href="about.html">
-                    <img alt="About Page" src="android-chrome-512x512.png"
-                    width="50" height="50">
-                    <span class="tooltiptext">About Us</span>
-               </a></ul>
-                </div>
-
-                <div class="flex-container" id="hide-desktop"> 
-                    <div>
-                    <img alt="Dashboard Page" src="watering-can.png"
-                    width="200" height="200"></div>
-                    </div>
-                    
-
-                <div id="hide-desktop">
-                    <input id="menu__toggle" type="checkbox" />
-                    <label class="menu__btn" for="menu__toggle">
-                    <span></span>
-                    </label>
-                
-                    <ul class="menu__box">
-
-                    <li><a href="index.html">
-                    <img alt="Index Page" src="eco-house.png"
-                    width="40" height="40">
-                    <br>
-                    <span style="color: black; font-size: small;">Home</span>
-                    </a></li> <br>
-
-                    <li><a href="experience.html">
-                    <img alt="Experience Page" src="farming.png"
-                    width="40" height="40"><br>
-                    <span style="color: black; font-size: small;">Experience</span>
-                    </a></li><br>
-
-                    <li><a href="dashboard.html">
-                    <img alt="Dashboard Page" src="watering-can.png"
-                    width="40" height="40"><br>
-                    <span style="color: black; font-size: small;">Dashboard</span>
-                    </a></li></br>
-
-                    <li><a href="contact.html">
-                    <img alt="Contact Page" src="mushrooms.png"
-                    width="40" height="40"><br>
-                    <span style="color: black; font-size: small;">Contact</span>
-                    </a></li><br>
-
-                    <li><a href="about.html">
-                    <img alt="About Page" src="android-chrome-512x512.png"
-                    width="40" height="40"><br>
-                    <span style="color: black; font-size: small;">About</span>
-                    </a></li><br>
-                    </ul>
-                </div>
-            </div>
-
-
-<iframe width="1330" height="790" src="https://datastudio.google.com/embed/reporting/7810df7c-22b7-4a98-b2ad-b5feb237c827/page/FgE7C" frameborder="0" style="border:0" allowfullscreen></iframe>
-                  
-
-        </div>
-    </body>
+</body>
 </html>

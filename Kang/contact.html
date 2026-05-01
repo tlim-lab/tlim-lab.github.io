@@ -1,153 +1,76 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <title>Contact</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link href="styles.css" rel="stylesheet">
-        <link rel="icon"href="android-chrome-512x512.png">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>Contact · Talent Lim</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="android-chrome-512x512.png">
+  <link href="styles.css" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLCRQC13B7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KLCRQC13B7');
+  </script>
+</head>
+<body>
 
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLCRQC13B7"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <!-- ── Desktop Sidebar ─────────────────────────────── -->
+  <aside class="sidebar">
+    <div class="sidebar-brand">KANG <span>工</span></div>
+    <ul class="sidebar-nav">
+      <li><a href="index.html"><img src="eco-house.png" alt="">Home</a></li>
+      <li><a href="experience.html"><img src="farming.png" alt="">Quest Log</a></li>
+      <li><a href="dashboard.html"><img src="watering-can.png" alt="">Analytics</a></li>
+      <li><a href="contact.html" class="active"><img src="mushrooms.png" alt="">Contact</a></li>
+      <li><a href="about.html"><img src="android-chrome-512x512.png" alt="">Lore</a></li>
+    </ul>
+    <div class="sidebar-footer">tlim-lab.github.io/Kang</div>
+  </aside>
 
-        gtag('config', 'G-KLCRQC13B7');
-        </script>
-    </head>
-    
-    <body>
-        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-right: 2cm;">
+  <!-- ── Mobile Bottom Nav ────────────────────────────── -->
+  <nav class="mobile-nav">
+    <ul>
+      <li><a href="index.html"><img src="eco-house.png" alt=""><span>Home</span></a></li>
+      <li><a href="experience.html"><img src="farming.png" alt=""><span>Quests</span></a></li>
+      <li><a href="dashboard.html"><img src="watering-can.png" alt=""><span>Stats</span></a></li>
+      <li><a href="contact.html" class="active"><img src="mushrooms.png" alt=""><span>Contact</span></a></li>
+      <li><a href="about.html"><img src="android-chrome-512x512.png" alt=""><span>Lore</span></a></li>
+    </ul>
+  </nav>
 
-            <div>
-                <ul class="nav">
-                    <li class="navbar-brand"><a href="index.html">Kang</a></li> 
-                </ul>
-            </div>
+  <!-- ── Main Content ──────────────────────────────────── -->
+  <main class="page-content" style="display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:90vh;">
 
-            <div>
-            </div>
-            
-        </nav>-->
-        
-        <div class="row">
-            
-            <div id = "sidebar" class="sidebar col-lg-1 col-md-1" style="background-color: #d2fcfb">
-                <div id="hide-mobile">
-                <ul id="barcon"><a href="index.html">
-                    <img alt="Index Page" src="eco-house.png"
-                    width="50" height="50">
-                    <span class="tooltiptext">Home</span>
-                </a></ul>
+    <div class="section-title fade-in" style="width:100%; max-width:600px">&#128222; Send a Signal</div>
+    <p class="section-subtitle fade-in" style="text-align:center">Open for discussions, collaborations, and new connections &#127759;</p>
 
-                <br><ul id="barcon"><a href="experience.html">
-                    <img alt="Experience Page" src="farming.png"
-                    width="50" height="50">
-                    <span class="tooltiptext">Experience</span>
-                </a></ul>
+    <div class="contact-grid fade-in fade-in-d1">
+      <a class="contact-item" href="https://www.linkedin.com/in/talentlim" target="_blank" rel="noopener">
+        <img src="linkedin.png" alt="LinkedIn">
+        <span>LinkedIn</span>
+        <span style="font-size:12px; color:var(--subtext); font-weight:400">linkedin.com/in/talentlim</span>
+      </a>
 
-                <br><ul id="barcon"><a href="dashboard.html">
-                    <img alt="Dashboard Page" src="watering-can.png"
-                    width="50" height="50"><br>
-                    <span class="tooltiptext">Dashboard</span>
-                </a></ul>
+      <a class="contact-item" href="mailto:talentlim005@gmail.com">
+        <img src="mail.png" alt="Email">
+        <span>Email</span>
+        <span style="font-size:12px; color:var(--subtext); font-weight:400">talentlim005@gmail.com</span>
+      </a>
 
-                <br><ul id="barcon"><a href="contact.html">
-                    <img alt="Contact Page" src="mushrooms.png"
-                    width="50" height="50">
-                    <span class="tooltiptext">Contact</span>
-                </a></ul>
+      <a class="contact-item" href="Resume - Talent Lim.pdf">
+        <span style="font-size:48px">&#128196;</span>
+        <span>Resume</span>
+        <span style="font-size:12px; color:var(--subtext); font-weight:400">Download PDF</span>
+      </a>
+    </div>
 
-                <br><ul id="barcon"><a href="about.html">
-                    <img alt="About Page" src="android-chrome-512x512.png"
-                    width="50" height="50">
-                    <span class="tooltiptext">About Us</span>
-                </a></ul>
-                </div>
+    <footer class="page-footer" style="width:100%">
+      Kang 工 &mdash; built by <a href="https://www.linkedin.com/in/talentlim">Talent Lim</a>
+    </footer>
+  </main>
 
-                <div class="flex-container" id="hide-desktop"> 
-                    <div>
-                    <img alt="Contact Page" src="mushrooms.png"
-                    width="200" height="200"></div>
-                    </div>
-                    
-
-                <div id="hide-desktop">
-                    <input id="menu__toggle" type="checkbox" />
-                    <label class="menu__btn" for="menu__toggle">
-                    <span></span>
-                    </label>
-                
-                    <ul class="menu__box">
-
-                    <li><a href="index.html">
-                    <img alt="Index Page" src="eco-house.png"
-                    width="40" height="40">
-                    <br>
-                    <span style="color: black; font-size: small;">Home</span>
-                    </a></li> <br>
-
-                    <li><a href="experience.html">
-                    <img alt="Experience Page" src="farming.png"
-                    width="40" height="40"><br>
-                    <span style="color: black; font-size: small;">Experience</span>
-                    </a></li><br>
-
-                    <li><a href="dashboard.html">
-                    <img alt="Dashboard Page" src="watering-can.png"
-                    width="40" height="40"><br>
-                    <span style="color: black; font-size: small;">Dashboard</span>
-                    </a></li></br>
-
-                    <li><a href="contact.html">
-                    <img alt="Contact Page" src="mushrooms.png"
-                    width="40" height="40"><br>
-                    <span style="color: black; font-size: small;">Contact</span>
-                    </a></li><br>
-
-                    <li><a href="about.html">
-                    <img alt="About Page" src="android-chrome-512x512.png"
-                    width="40" height="40"><br>
-                    <span style="color: black; font-size: small;">About</span>
-                    </a></li><br>
-                    </ul>
-                </div>
-            </div>
-
-
-            <div class="main col-lg-11 col-md-10 col-xs-5" style="background-color: #fdffd7;padding:70px; padding-top:120px">
-                <div class="text-center">
-                    <h1 >&#128222; Connect with me</h1><br><br> 
-                </div>
-
-                <br>
-
-                <div class="flex-container">
-                    <div id="wrap" class="contact">
-                        <a href="https://www.linkedin.com/in/talentlim">
-                        <img src="linkedin.png" alt="LinkedIn" width="80" height="80">
-                        </a>
-                    </div>
-                    
-                    <div id="wrap" class="contact">
-                        <a href="mailto:talentlim005+kang@gmail.com">
-                        <img src="mail.png" alt="Email" width="80" height="80">
-                        </a>
-                    </div>
-                    
-                </div>
-
-                <br><br><br>
-                <footer class="small text-center text-muted">
-                    For windows user, please zoom out your browser
-                    <br>Kang by CodingCoco <a href="https://www.linkedin.com/in/talentlim">Talent Lim</a>
-                </footer>
-
-            </div>
-        </div>
-    </body>
+</body>
 </html>
