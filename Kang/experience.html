@@ -1,329 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Quest Log · Talent Lim</title>
+  <title>Experience · Talent Lim</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="android-chrome-512x512.png">
   <link href="styles.css" rel="stylesheet">
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLCRQC13B7"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-KLCRQC13B7');
-  </script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KLCRQC13B7');</script>
 </head>
 <body>
 
-  <!-- ── Desktop Sidebar ─────────────────────────────── -->
-  <aside class="sidebar">
-    <div class="sidebar-brand">KANG <span>工</span></div>
-    <ul class="sidebar-nav">
-      <li><a href="index.html"><img src="eco-house.png" alt="">Home</a></li>
-      <li><a href="experience.html" class="active"><img src="farming.png" alt="">Quest Log</a></li>
-      <li><a href="dashboard.html"><img src="watering-can.png" alt="">Analytics</a></li>
-      <li><a href="contact.html"><img src="mushrooms.png" alt="">Contact</a></li>
-      <li><a href="about.html"><img src="android-chrome-512x512.png" alt="">Lore</a></li>
-    </ul>
-    <div class="sidebar-footer">tlim-lab.github.io/Kang</div>
-  </aside>
+<nav class="top-nav">
+  <a href="index.html" class="nav-brand">Talent Lim</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="experience.html" class="active">Experience</a></li>
+    <li><a href="dashboard.html">Analytics</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <a href="Resume - Talent Lim.pdf" class="btn btn-primary nav-cta">Download CV</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <line x1="3" y1="6" x2="19" y2="6"/><line x1="3" y1="12" x2="19" y2="12"/><line x1="3" y1="18" x2="19" y2="18"/>
+    </svg>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="dashboard.html">Analytics</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</div>
 
-  <!-- ── Mobile Bottom Nav ────────────────────────────── -->
-  <nav class="mobile-nav">
-    <ul>
-      <li><a href="index.html"><img src="eco-house.png" alt=""><span>Home</span></a></li>
-      <li><a href="experience.html" class="active"><img src="farming.png" alt=""><span>Quests</span></a></li>
-      <li><a href="dashboard.html"><img src="watering-can.png" alt=""><span>Stats</span></a></li>
-      <li><a href="contact.html"><img src="mushrooms.png" alt=""><span>Contact</span></a></li>
-      <li><a href="about.html"><img src="android-chrome-512x512.png" alt=""><span>Lore</span></a></li>
-    </ul>
-  </nav>
+<div class="page">
 
-  <!-- ── Main Content ──────────────────────────────────── -->
-  <main class="page-content">
-
-    <!-- ── Work Experience ───────────────────────── -->
-    <div class="section-title fade-in">&#128668; Work Experience</div>
-    <p class="section-subtitle fade-in">Domain of expertise: Data Management, Analytics &amp; Team Leadership</p>
-
-    <!-- AI-Levate -->
-    <div class="card c-teal fade-in fade-in-d1">
-      <div class="job-header">
-        <div>
-          <div class="job-company">AI-Levate</div>
-          <div class="job-location">&#128205; Melbourne, VIC</div>
-        </div>
-        <div class="job-period">Aug 2025 – Present</div>
-      </div>
-
-      <div class="job-role">Team Lead</div>
-      <div class="sub-role-period">Jan 2026 – Present</div>
-      <ul class="job-bullets">
-        <li>Leading a team of <strong>10 members</strong> across <strong>4 concurrent projects</strong> spanning AI for the AEC industry, cloud infrastructure, and software development.</li>
-      </ul>
-
-      <div class="sub-role">Solutions Architect</div>
-      <div class="sub-role-period">Aug 2025 – Dec 2025</div>
-
-      <div class="badge-wrap" style="margin-top:12px">
-        <span class="badge b-teal">Team Leadership</span>
-        <span class="badge b-orange">Cloud Infrastructure</span>
-        <span class="badge b-blue">AI / ML</span>
-        <span class="badge b-green">Software Development</span>
-        <span class="badge b-mauve">Solutions Architecture</span>
-      </div>
-    </div>
-
-    <!-- Digimaker -->
-    <div class="card c-green fade-in fade-in-d2">
-      <div class="job-header">
-        <div>
-          <div class="job-company">Digimaker – Programming for Young Makers</div>
-          <div class="job-location">&#128205; Melbourne, VIC</div>
-        </div>
-        <div class="job-period">Apr 2025 – Sep 2025</div>
-      </div>
-      <div class="job-role">Coding Teacher</div>
-      <ul class="job-bullets">
-        <li>Taught Computer Science concepts at schools using <strong>Scratch, Python, Java, JavaScript, and Small Basic</strong>.</li>
-        <li>Covered <strong>4 schools (5 sessions)</strong> per week.</li>
-        <li>Re-engaged Clayton North PS (a win-back school), increasing enrolment by <strong>150%</strong> the following term.</li>
-        <li>Achieved a teacher satisfaction rating of <strong>4.5 / 5</strong> by students.</li>
-      </ul>
-      <div class="badge-wrap" style="margin-top:12px">
-        <span class="badge b-green">Python</span>
-        <span class="badge b-green">JavaScript</span>
-        <span class="badge b-green">Java</span>
-        <span class="badge b-green">Scratch</span>
-        <span class="badge b-mauve">Teaching</span>
-      </div>
-    </div>
-
-    <!-- PermataBank -->
-    <div class="card c-yellow fade-in fade-in-d1">
-      <div class="job-header">
-        <div>
-          <div class="job-company">PermataBank</div>
-          <div class="job-location">&#128205; Jakarta, Indonesia</div>
-        </div>
-        <div class="job-period">Oct 2021 – Oct 2024</div>
-      </div>
-
-      <div class="job-role">Data Analyst</div>
-      <div class="sub-role-period">Aug 2022 – Oct 2024</div>
-      <ul class="job-bullets">
-        <li>Identified trends, visualised, and presented insights to internal stakeholders using <strong>SAS, Excel, and Python</strong>.</li>
-        <li>Identified top-up opportunities for SME Individual New to Bank customers, resulting in <strong>IDR 90Bio (AUD 8.6M)</strong> balance increase.</li>
-        <li>Revamped Bancassurance Priority Campaign, increasing take-up rate by <strong>667% from 1.2% to 8%</strong> (IDR 4Bio / AUD 400K revenue increase).</li>
-        <li>Conducted root cause and impact analysis on <strong>2M duplicate customer IDs</strong> for a bank-wide initiative; led cross-functional process improvements and the first data clean-up rollout.</li>
-        <li>Supported two Enterprise Data Management initiatives (CRM, MIS/Power BI) by resolving data anomalies via <strong>SQL analysis, UAT, and source system investigation</strong>, improving reporting accuracy.</li>
-      </ul>
-
-      <div class="sub-role">Banking Associate Program</div>
-      <div class="sub-role-period">Oct 2021 – Oct 2022 · Placement: Enterprise Data Management and Analytics</div>
-
-      <div class="badge-wrap" style="margin-top:12px">
-        <span class="badge b-yellow">SAS</span>
-        <span class="badge b-blue">Python</span>
-        <span class="badge b-blue">SQL</span>
-        <span class="badge b-yellow">Excel</span>
-        <span class="badge b-blue">Power BI</span>
-        <span class="badge b-teal">Data Management</span>
-        <span class="badge b-teal">UAT</span>
-      </div>
-    </div>
-
-    <!-- Advisors Alliance Group -->
-    <div class="card c-mauve fade-in fade-in-d2">
-      <div class="job-header">
-        <div>
-          <div class="job-company">Advisors Alliance Group</div>
-          <div class="job-location">&#128205; Singapore</div>
-        </div>
-        <div class="job-period">May 2020 – Jun 2020</div>
-      </div>
-      <div class="job-role">Financial Advisor Intern</div>
-      <ul class="job-bullets">
-        <li>Researched the Indonesian job market and provided ideas and solutions to improve AAGI young talent recruitment.</li>
-        <li>Co-hosted a webinar on <strong>"Investment 101 &amp; Money Management"</strong> with <strong>180+ participants</strong>; served as moderator.</li>
-        <li>Created engaging educational content to increase financial literacy among Indonesian youth.</li>
-      </ul>
-      <div class="badge-wrap" style="margin-top:12px">
-        <span class="badge b-mauve">Research</span>
-        <span class="badge b-mauve">Public Speaking</span>
-        <span class="badge b-mauve">Content Creation</span>
-      </div>
-    </div>
-
-    <!-- PT Nadya Putra -->
-    <div class="card fade-in fade-in-d1">
-      <div class="job-header">
-        <div>
-          <div class="job-company">PT Nadya Putra Investama</div>
-          <div class="job-location">&#128205; Indonesia</div>
-        </div>
-        <div class="job-period">May 2018</div>
-      </div>
-      <div class="job-role">Accounting Intern</div>
-      <ul class="job-bullets">
-        <li>Assisted the accounting department with daily reporting tasks and sorting/compiling numerical and ordinal tenant data.</li>
-      </ul>
-      <div class="badge-wrap" style="margin-top:12px">
-        <span class="badge b-blue">Accounting</span>
-        <span class="badge b-blue">Data Reporting</span>
-      </div>
-    </div>
-
-    <!-- ── Projects ─────────────────────────────────────── -->
-    <div class="section-gap"></div>
-    <div class="section-title fade-in">&#9997; Projects</div>
-    <p class="section-subtitle fade-in">Skills showcased: Python, HTML, CSS, JavaScript, Django, Data Analytics</p>
-
-    <div class="two-col">
-      <div class="card c-teal fade-in fade-in-d1">
-        <div class="job-header">
-          <div class="job-company"><a href="about.html">KANG 工</a></div>
-          <div class="job-period">Oct 2022</div>
-        </div>
-        <div class="job-role">Web Analytics &amp; Report</div>
-        <p style="font-size:14px; color:var(--text); margin-top:8px;">
-          Built a static personal website / online resume using HTML and CSS.
-          Collected web traffic via Google Analytics and produced a live report in Google Data Studio.
-          Created a <a href="https://public.tableau.com/views/EventsTracker/KangEventsCount?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link">Tableau dashboard</a> from API-downloaded traffic data.
-        </p>
-        <div class="badge-wrap" style="margin-top:12px">
-          <span class="badge b-green">HTML</span>
-          <span class="badge b-green">CSS</span>
-          <span class="badge b-teal">Google Analytics</span>
-          <span class="badge b-teal">Data Studio</span>
-          <span class="badge b-blue">Tableau</span>
-        </div>
-      </div>
-
-      <div class="card c-blue fade-in fade-in-d2" style="--card-accent: var(--blue)">
-        <div class="job-header">
-          <div class="job-company"><a href="https://youtu.be/Qg3zCQu3kTM">Stockholder Performance Analyzer</a></div>
-          <div class="job-period">Feb 2021</div>
-        </div>
-        <div class="job-role">Full-Stack Web App</div>
-        <p style="font-size:14px; color:var(--text); margin-top:8px;">
-          Built a WebApp to measure growth, profit, and track stocks owned by stockholders using
-          historical and real-time data via open-source API. Automates the manual tracking
-          and analysis of stock transaction performance.
-        </p>
-        <div class="badge-wrap" style="margin-top:12px">
-          <span class="badge b-blue">Django</span>
-          <span class="badge b-blue">Python</span>
-          <span class="badge b-green">JavaScript</span>
-          <span class="badge b-teal">REST API</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── Education ─────────────────────────────────────── -->
-    <div class="section-gap"></div>
-    <div class="section-title fade-in">&#127891; Education</div>
-
-    <div class="two-col">
-      <div class="card c-mauve fade-in fade-in-d1">
-        <div class="job-header">
-          <div>
-            <div class="job-company">Monash University</div>
-            <div class="job-location">&#128205; Melbourne, Australia</div>
-          </div>
-          <div class="job-period">Mar 2025 – Present</div>
-        </div>
-        <div class="job-role">Master of Information Technology</div>
-        <div class="badge-wrap" style="margin-top:10px">
-          <span class="badge b-mauve">Postgraduate</span>
-          <span class="badge b-blue">IT</span>
-        </div>
-      </div>
-
-      <div class="card c-mauve fade-in fade-in-d2">
-        <div class="job-header">
-          <div>
-            <div class="job-company">Singapore Institute of Management</div>
-            <div class="job-location">&#128205; Singapore</div>
-          </div>
-          <div class="job-period">Sep 2018 – Aug 2021</div>
-        </div>
-        <div class="job-role">BSc – Accounting &amp; Finance</div>
-        <div class="badge-wrap" style="margin-top:10px">
-          <span class="badge b-yellow">Accounting</span>
-          <span class="badge b-yellow">Finance</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── Certifications ─────────────────────────────────── -->
-    <div class="section-gap"></div>
-    <div class="section-title fade-in">&#127942; Certifications</div>
-    <p class="section-subtitle fade-in">Verified credentials and badges</p>
-
-    <div class="two-col">
-      <!-- Left column -->
+  <!-- ── Work Experience ──────────────────────────────────────────── -->
+  <section class="section fade-in">
+    <div class="exp-section-header">
       <div>
-        <div class="card c-orange fade-in fade-in-d1">
-          <div class="cert-group-title">&#9729; Amazon Web Services (AWS)</div>
-          <ul class="cert-list">
-            <li><span class="cert-name">AWS Certified Solutions Architect – Associate</span><span class="cert-meta">Sep 2025 · exp Sep 2028</span></li>
-            <li><span class="cert-name">AWS Certified AI Practitioner</span><span class="cert-meta">Nov 2025 · exp Nov 2028</span></li>
-            <li><span class="cert-name">AWS Certified Cloud Practitioner</span><span class="cert-meta">Aug 2025 · exp Aug 2028</span></li>
-            <li><span class="cert-name">AWS Partner: Technical Accredited</span><span class="cert-meta">Aug 2025</span></li>
-          </ul>
-        </div>
+        <p class="section-label">Career</p>
+        <h1 class="section-title">Work Experience</h1>
+      </div>
+      <div class="exp-filters" role="group" aria-label="Filter experience">
+        <button class="exp-filter-btn active" data-filter="all">All</button>
+        <button class="exp-filter-btn" data-filter="data">Data &amp; Analytics</button>
+        <button class="exp-filter-btn" data-filter="leadership">Leadership</button>
+        <button class="exp-filter-btn" data-filter="teaching">Teaching</button>
+        <button class="exp-filter-btn" data-filter="finance">Finance</button>
+      </div>
+    </div>
 
-        <div class="card c-red fade-in fade-in-d2">
-          <div class="cert-group-title">&#128201; Databricks</div>
-          <ul class="cert-list">
-            <li><span class="cert-name">Databricks Certified Data Engineer Associate</span><span class="cert-meta">Mar 2026 · exp Mar 2028</span></li>
-            <li><span class="cert-name">Knowledge Badge – Lakeflow Spark Declarative Pipelines</span><span class="cert-meta">Jan 2026</span></li>
-            <li><span class="cert-name">Knowledge Badge – Data Ingestion with Lakeflow Connect</span><span class="cert-meta">Jan 2026</span></li>
-          </ul>
-        </div>
+    <div class="timeline">
 
-        <div class="card c-mauve fade-in fade-in-d1">
-          <div class="cert-group-title">&#129302; Anthropic</div>
-          <ul class="cert-list">
-            <li><span class="cert-name">Introduction to Subagents</span><span class="cert-meta">Apr 2026</span></li>
-            <li><span class="cert-name">Claude Code 101</span><span class="cert-meta">Apr 2026</span></li>
-            <li><span class="cert-name">Claude Code in Action</span><span class="cert-meta">Apr 2026</span></li>
+      <!-- AI-Levate -->
+      <div class="timeline-item" data-cat="leadership data">
+        <div class="timeline-dot"></div>
+        <div class="tl-meta">
+          <span class="tl-period">Aug 2025 – Present</span>
+          <span class="tl-location">Melbourne, VIC</span>
+        </div>
+        <div class="tl-body">
+          <div class="tl-org">AI-Levate</div>
+          <div class="tl-role">Team Lead</div>
+          <div class="tl-subrole-period">Jan 2026 – Present</div>
+          <ul class="tl-bullets">
+            <li>Leading a team of <strong>10 members</strong> across <strong>4 concurrent projects</strong> spanning AI for the AEC industry, cloud infrastructure, and software development.</li>
+          </ul>
+          <div class="tl-role tl-role-secondary">Solutions Architect</div>
+          <div class="tl-subrole-period">Aug 2025 – Dec 2025</div>
+          <div class="badge-wrap" style="margin-top:12px">
+            <span class="badge accent">Team Leadership</span>
+            <span class="badge accent">Cloud Infrastructure</span>
+            <span class="badge">AI / ML</span>
+            <span class="badge">Solutions Architecture</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Digimaker -->
+      <div class="timeline-item" data-cat="teaching">
+        <div class="timeline-dot"></div>
+        <div class="tl-meta">
+          <span class="tl-period">Apr – Sep 2025</span>
+          <span class="tl-location">Melbourne, VIC</span>
+        </div>
+        <div class="tl-body">
+          <div class="tl-org">Digimaker</div>
+          <div class="tl-role">Coding Teacher</div>
+          <ul class="tl-bullets">
+            <li>Taught CS concepts at schools using <strong>Scratch, Python, Java, JavaScript,</strong> and Small Basic.</li>
+            <li>Covered <strong>4 schools (5 sessions)</strong> per week.</li>
+            <li>Re-engaged Clayton North PS (win-back school) — enrolment grew <strong>150%</strong> the following term.</li>
+            <li>Achieved a teacher satisfaction rating of <strong>4.5 / 5</strong>.</li>
+          </ul>
+          <div class="badge-wrap" style="margin-top:12px">
+            <span class="badge">Python</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">Java</span>
+            <span class="badge">Teaching</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PermataBank -->
+      <div class="timeline-item" data-cat="data finance">
+        <div class="timeline-dot"></div>
+        <div class="tl-meta">
+          <span class="tl-period">Oct 2021 – Oct 2024</span>
+          <span class="tl-location">Jakarta, Indonesia</span>
+        </div>
+        <div class="tl-body">
+          <div class="tl-org">PermataBank</div>
+          <div class="tl-role">Data Analyst</div>
+          <div class="tl-subrole-period">Aug 2022 – Oct 2024</div>
+          <ul class="tl-bullets">
+            <li>Identified trends, visualised, and presented insights using <strong>SAS, Excel,</strong> and Python.</li>
+            <li>Top-up opportunities for SME NTB customers → <strong>IDR 90Bio (AUD 8.6M)</strong> balance increase.</li>
+            <li>Revamped Bancassurance Priority Campaign — take-up grew <strong>667%, from 1.2% → 8%</strong> (AUD 400K revenue increase).</li>
+            <li>Root cause and impact analysis on <strong>2M duplicate customer IDs</strong>; led bank-wide data clean-up rollout.</li>
+            <li>Supported CRM and MIS/Power BI initiatives via <strong>SQL analysis, UAT,</strong> and source system investigation.</li>
+          </ul>
+          <div class="tl-role tl-role-secondary">Banking Associate Program</div>
+          <div class="tl-subrole-period">Oct 2021 – Oct 2022 · Enterprise Data Management &amp; Analytics</div>
+          <div class="badge-wrap" style="margin-top:12px">
+            <span class="badge accent">SAS</span>
+            <span class="badge accent">Python</span>
+            <span class="badge accent">SQL</span>
+            <span class="badge">Excel</span>
+            <span class="badge">Power BI</span>
+            <span class="badge">UAT</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Advisors Alliance -->
+      <div class="timeline-item" data-cat="finance">
+        <div class="timeline-dot"></div>
+        <div class="tl-meta">
+          <span class="tl-period">May – Jun 2020</span>
+          <span class="tl-location">Singapore</span>
+        </div>
+        <div class="tl-body">
+          <div class="tl-org">Advisors Alliance Group</div>
+          <div class="tl-role">Financial Advisor Intern</div>
+          <ul class="tl-bullets">
+            <li>Researched the Indonesian job market and provided recruitment improvement ideas for AAGI's young talent pipeline.</li>
+            <li>Co-hosted <strong>"Investment 101 &amp; Money Management"</strong> webinar with <strong>180+ participants;</strong> served as moderator.</li>
+            <li>Created educational content to increase financial literacy among Indonesian youth.</li>
+          </ul>
+          <div class="badge-wrap" style="margin-top:12px">
+            <span class="badge">Research</span>
+            <span class="badge">Public Speaking</span>
+            <span class="badge">Content Creation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PT Nadya -->
+      <div class="timeline-item" data-cat="finance">
+        <div class="timeline-dot"></div>
+        <div class="tl-meta">
+          <span class="tl-period">May 2018</span>
+          <span class="tl-location">Indonesia</span>
+        </div>
+        <div class="tl-body">
+          <div class="tl-org">PT Nadya Putra Investama</div>
+          <div class="tl-role">Accounting Intern</div>
+          <ul class="tl-bullets">
+            <li>Assisted the accounting department with daily reporting tasks and compiling numerical and ordinal tenant data.</li>
           </ul>
         </div>
       </div>
 
-      <!-- Right column -->
+    </div><!-- /timeline -->
+  </section>
+
+  <!-- ── Projects ─────────────────────────────────────────────────── -->
+  <section class="section fade-in">
+    <div class="section-header">
       <div>
-        <div class="card c-blue fade-in fade-in-d2">
-          <div class="cert-group-title">&#127891; Other Certifications</div>
-          <ul class="cert-list">
-            <li><span class="cert-name">Deep Learning with TensorFlow</span><span class="cert-meta">Cognitive Class · Mar 2026</span></li>
-            <li><span class="cert-name">Intermediate Machine Learning</span><span class="cert-meta">Kaggle · Jun 2022</span></li>
-            <li><span class="cert-name">Intro to Machine Learning</span><span class="cert-meta">Kaggle · Jun 2022</span></li>
-            <li><span class="cert-name">Web Programming with Python &amp; JavaScript</span><span class="cert-meta">HarvardX · Mar 2021</span></li>
-            <li><span class="cert-name">Introduction to Computer Science (CS50)</span><span class="cert-meta">HarvardX · Aug 2020</span></li>
-            <li><span class="cert-name">Data Analysis with Python</span><span class="cert-meta">freeCodeCamp · Sep 2020</span></li>
-            <li><span class="cert-name">Learning Excel: Data Analysis</span><span class="cert-meta">LinkedIn Learning · Feb 2022</span></li>
-            <li><span class="cert-name">SQL: Data Reporting and Analysis</span><span class="cert-meta">LinkedIn Learning · Nov 2021</span></li>
-            <li><span class="cert-name">Learning SQL Programming</span><span class="cert-meta">LinkedIn Learning · Nov 2021</span></li>
-            <li><span class="cert-name">Google Analytics Individual Qualification</span><span class="cert-meta">Google · Jun 2020</span></li>
-            <li><span class="cert-name">Fundamentals of Digital Marketing</span><span class="cert-meta">Google</span></li>
-          </ul>
-        </div>
+        <p class="section-label">Work</p>
+        <h2 class="section-title">Projects</h2>
       </div>
     </div>
-
-    <div class="btn-row" style="margin-top:32px">
-      <a href="Resume - Talent Lim.pdf" class="btn btn-yellow">&#11015; Download Resume</a>
+    <div class="project-card" style="max-width:600px">
+      <div class="project-title"><a href="about.html">Kang 工 — Web Portfolio &amp; Analytics</a></div>
+      <div class="project-year">Oct 2022</div>
+      <p class="project-desc">
+        Built a static personal portfolio site with HTML and CSS. Instrumented it with Google Analytics,
+        built a live report in Google Data Studio, and created a
+        <a href="https://public.tableau.com/views/EventsTracker/KangEventsCount?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link">Tableau dashboard</a>
+        from API-downloaded event data — demonstrating the full data collection → visualisation pipeline.
+      </p>
+      <div class="badge-wrap">
+        <span class="badge">HTML</span>
+        <span class="badge">CSS</span>
+        <span class="badge accent">Google Analytics</span>
+        <span class="badge">Data Studio</span>
+        <span class="badge">Tableau</span>
+      </div>
     </div>
+  </section>
 
-    <footer class="page-footer">
-      Kang 工 &mdash; built by <a href="https://www.linkedin.com/in/talentlim">Talent Lim</a>
-    </footer>
-  </main>
+  <!-- ── Education ────────────────────────────────────────────────── -->
+  <section class="section fade-in">
+    <div class="section-header">
+      <div>
+        <p class="section-label">Academic</p>
+        <h2 class="section-title">Education</h2>
+      </div>
+    </div>
+    <div class="edu-row">
+      <div>
+        <div class="edu-degree">Master of Information Technology</div>
+        <div class="edu-school">Monash University · Melbourne, Australia</div>
+      </div>
+      <div class="edu-period">Mar 2025 – Present</div>
+    </div>
+    <div class="edu-row">
+      <div>
+        <div class="edu-degree">Bachelor of Science – Accounting &amp; Finance</div>
+        <div class="edu-school">Singapore Institute of Management · Singapore</div>
+      </div>
+      <div class="edu-period">Sep 2018 – Aug 2021</div>
+    </div>
+  </section>
 
+  <!-- ── Certifications ───────────────────────────────────────────── -->
+  <section class="section fade-in">
+    <div class="section-header">
+      <div>
+        <p class="section-label">Credentials</p>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+    </div>
+    <div class="two-col">
+      <div>
+        <div class="cert-group-label">Amazon Web Services</div>
+        <ul class="cert-list">
+          <li><span class="cert-name">AWS Certified Solutions Architect – Associate</span><span class="cert-meta">Sep 2025 · exp Sep 2028</span></li>
+          <li><span class="cert-name">AWS Certified AI Practitioner</span><span class="cert-meta">Nov 2025 · exp Nov 2028</span></li>
+          <li><span class="cert-name">AWS Certified Cloud Practitioner</span><span class="cert-meta">Aug 2025 · exp Aug 2028</span></li>
+          <li><span class="cert-name">AWS Partner: Technical Accredited</span><span class="cert-meta">Aug 2025</span></li>
+        </ul>
+        <div class="cert-group-label">Databricks</div>
+        <ul class="cert-list">
+          <li><span class="cert-name">Databricks Certified Data Engineer Associate</span><span class="cert-meta">Mar 2026 · exp Mar 2028</span></li>
+          <li><span class="cert-name">Knowledge Badge – Lakeflow Spark Declarative Pipelines</span><span class="cert-meta">Jan 2026</span></li>
+          <li><span class="cert-name">Knowledge Badge – Data Ingestion with Lakeflow Connect</span><span class="cert-meta">Jan 2026</span></li>
+        </ul>
+        <div class="cert-group-label">Anthropic</div>
+        <ul class="cert-list">
+          <li><span class="cert-name">Introduction to Subagents</span><span class="cert-meta">Apr 2026</span></li>
+          <li><span class="cert-name">Claude Code 101</span><span class="cert-meta">Apr 2026</span></li>
+          <li><span class="cert-name">Claude Code in Action</span><span class="cert-meta">Apr 2026</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="cert-group-label">Other</div>
+        <ul class="cert-list">
+          <li><span class="cert-name">Deep Learning with TensorFlow</span><span class="cert-meta">Cognitive Class · Mar 2026</span></li>
+          <li><span class="cert-name">Intermediate Machine Learning</span><span class="cert-meta">Kaggle · Jun 2022</span></li>
+          <li><span class="cert-name">Intro to Machine Learning</span><span class="cert-meta">Kaggle · Jun 2022</span></li>
+          <li><span class="cert-name">Web Programming with Python &amp; JavaScript</span><span class="cert-meta">HarvardX · Mar 2021</span></li>
+          <li><span class="cert-name">Introduction to Computer Science (CS50)</span><span class="cert-meta">HarvardX · Aug 2020</span></li>
+          <li><span class="cert-name">Data Analysis with Python</span><span class="cert-meta">freeCodeCamp · Sep 2020</span></li>
+          <li><span class="cert-name">Learning Excel: Data Analysis</span><span class="cert-meta">LinkedIn Learning · Feb 2022</span></li>
+          <li><span class="cert-name">SQL: Data Reporting and Analysis</span><span class="cert-meta">LinkedIn Learning · Nov 2021</span></li>
+          <li><span class="cert-name">Learning SQL Programming</span><span class="cert-meta">LinkedIn Learning · Nov 2021</span></li>
+          <li><span class="cert-name">Google Analytics Individual Qualification</span><span class="cert-meta">Google · Jun 2020</span></li>
+          <li><span class="cert-name">Fundamentals of Digital Marketing</span><span class="cert-meta">Google</span></li>
+        </ul>
+      </div>
+    </div>
+    <div style="margin-top:32px">
+      <a href="Resume - Talent Lim.pdf" class="btn btn-primary">Download full CV</a>
+    </div>
+  </section>
+
+</div>
+
+<footer class="page-footer">
+  <span>© 2025 Talent Lim</span>
+  <span><a href="about.html">About this site</a></span>
+</footer>
+
+<script>
+  // Mobile nav
+  const toggle = document.getElementById('navToggle');
+  const menu   = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', () => menu.classList.toggle('open'));
+
+  // Experience filter
+  const filterBtns = document.querySelectorAll('.exp-filter-btn');
+  const timelineItems = document.querySelectorAll('.timeline-item[data-cat]');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      timelineItems.forEach(item => {
+        const cats = item.dataset.cat || '';
+        const show = filter === 'all' || cats.split(' ').includes(filter);
+        item.classList.toggle('tl-hidden', !show);
+      });
+    });
+  });
+</script>
 </body>
 </html>

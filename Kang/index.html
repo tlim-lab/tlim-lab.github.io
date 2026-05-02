@@ -4,147 +4,145 @@
   <title>Talent Lim</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Talent Lim — Data Analyst & IT Professional based in Melbourne, Australia.">
   <link rel="icon" href="android-chrome-512x512.png">
   <link href="styles.css" rel="stylesheet">
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLCRQC13B7"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-KLCRQC13B7');
-  </script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KLCRQC13B7');</script>
 </head>
 <body>
 
-  <!-- ── Desktop Sidebar ─────────────────────────────── -->
-  <aside class="sidebar">
-    <div class="sidebar-brand">KANG <span>工</span></div>
-    <ul class="sidebar-nav">
-      <li><a href="index.html" class="active"><img src="eco-house.png" alt="">Home</a></li>
-      <li><a href="experience.html"><img src="farming.png" alt="">Quest Log</a></li>
-      <li><a href="dashboard.html"><img src="watering-can.png" alt="">Analytics</a></li>
-      <li><a href="contact.html"><img src="mushrooms.png" alt="">Contact</a></li>
-      <li><a href="about.html"><img src="android-chrome-512x512.png" alt="">Lore</a></li>
-    </ul>
-    <div class="sidebar-footer">tlim-lab.github.io/Kang</div>
-  </aside>
+<!-- ── Nav ─────────────────────────────────────────────────────────────────── -->
+<nav class="top-nav">
+  <a href="index.html" class="nav-brand">Talent Lim</a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="dashboard.html">Analytics</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <line x1="3" y1="6" x2="19" y2="6"/><line x1="3" y1="12" x2="19" y2="12"/><line x1="3" y1="18" x2="19" y2="18"/>
+    </svg>
+  </button>
+</nav>
 
-  <!-- ── Mobile Bottom Nav ────────────────────────────── -->
-  <nav class="mobile-nav">
-    <ul>
-      <li><a href="index.html" class="active"><img src="eco-house.png" alt=""><span>Home</span></a></li>
-      <li><a href="experience.html"><img src="farming.png" alt=""><span>Quests</span></a></li>
-      <li><a href="dashboard.html"><img src="watering-can.png" alt=""><span>Stats</span></a></li>
-      <li><a href="contact.html"><img src="mushrooms.png" alt=""><span>Contact</span></a></li>
-      <li><a href="about.html"><img src="android-chrome-512x512.png" alt=""><span>Lore</span></a></li>
-    </ul>
-  </nav>
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="dashboard.html">Analytics</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</div>
 
-  <!-- ── Main Content ──────────────────────────────────── -->
-  <main class="page-content">
-
-    <!-- Hero -->
-    <section class="hero">
-      <div class="hero-photo-wrap fade-in">
-        <img class="profile-photo" src="IMG_0036.jpeg" alt="Talent Lim">
+<!-- ── Hero ────────────────────────────────────────────────────────────────── -->
+<div class="page">
+  <section class="hero">
+    <div class="hero-content fade-in">
+      <p class="hero-eyebrow">Melbourne, Australia · Open to opportunities</p>
+      <h1 class="hero-heading">Hi, I'm <em>Talent</em> —<br>Data &amp; IT Professional.</h1>
+      <p class="hero-sub">Team Lead at AI-Levate &nbsp;·&nbsp; MIT Candidate, Monash University</p>
+      <p class="hero-bio">
+        5+ years bridging business and technology through data management, analytics,
+        and team leadership. Currently leading a team of 10 across AI, cloud, and
+        software projects while pursuing a Master of Information Technology.
+      </p>
+      <div class="btn-row">
+        <a href="experience.html" class="btn btn-primary">View experience</a>
+        <a href="Resume - Talent Lim.pdf" class="btn btn-outline">Download CV</a>
       </div>
+    </div>
+    <div class="hero-photo fade-in fade-in-d2">
+      <img src="IMG_0036.jpeg" alt="Talent Lim">
+    </div>
+  </section>
 
-      <div class="hero-text">
-        <div class="hero-name fade-in fade-in-d1">
-          TALENT LIM<span class="cursor"></span>
-        </div>
-        <div class="hero-tagline fade-in fade-in-d2">
-          &#128205; Data Analyst &amp; IT Professional · Melbourne, AU
-        </div>
-        <div class="hero-bio fade-in fade-in-d3">
-          <p>
-            3+ years in data management, analytics, and team leadership.
-            Currently a <strong>Team Lead</strong> at AI-Levate, heading a team of 10 across 4 concurrent
-            projects in AI, cloud, and software development.
-          </p>
-          <p>
-            Pursuing a <strong>Master of Information Technology</strong> at Monash University.
-            Holds AWS Solutions Architect, AI Practitioner &amp; Cloud Practitioner certifications,
-            alongside Databricks Data Engineer Associate.
-          </p>
-          <p>
-            When the laptop is closed: &#128218; reading, &#127939; working out,
-            and &#127992; badminton.
-          </p>
-        </div>
-        <div class="btn-row fade-in fade-in-d4">
-          <a href="contact.html" class="btn btn-teal">&#9993; Reach Out</a>
-          <a href="experience.html" class="btn btn-yellow">&#128196; Quest Log</a>
-          <a href="Resume - Talent Lim.pdf" class="btn btn-yellow">&#11015; Resume</a>
-        </div>
+  <!-- Skills -->
+  <section class="section fade-in fade-in-d4">
+    <div class="section-header">
+      <div>
+        <p class="section-label">Toolkit</p>
+        <h2 class="section-title">Skills &amp; Technologies</h2>
       </div>
-    </section>
+      <a href="experience.html" class="btn btn-outline">Full experience →</a>
+    </div>
 
-    <!-- Skills -->
-    <section class="skills-section fade-in fade-in-d4">
-      <div class="section-title">&#127918; Skills &amp; Loadout</div>
-      <p class="section-subtitle">Tools, technologies, and domains I work with</p>
-
+    <div class="skills-grid">
       <div class="skill-group">
-        <div class="skill-group-label">&#9729; Cloud &amp; Data Engineering</div>
+        <p class="skill-group-label">Cloud &amp; Data Engineering</p>
         <div class="badge-wrap">
-          <span class="badge b-orange">AWS Solutions Architect</span>
-          <span class="badge b-orange">AWS AI Practitioner</span>
-          <span class="badge b-orange">AWS Cloud Practitioner</span>
-          <span class="badge b-red">Azure Databricks</span>
-          <span class="badge b-mauve">TensorFlow</span>
+          <span class="badge accent">AWS SA</span>
+          <span class="badge accent">AWS AI</span>
+          <span class="badge accent">AWS CCP</span>
+          <span class="badge">Databricks</span>
+          <span class="badge">TensorFlow</span>
+          <span class="badge">Azure</span>
         </div>
       </div>
-
       <div class="skill-group">
-        <div class="skill-group-label">&#128202; Analytics &amp; BI</div>
+        <p class="skill-group-label">Analytics &amp; BI</p>
         <div class="badge-wrap">
-          <span class="badge b-blue">Python</span>
-          <span class="badge b-blue">SQL</span>
-          <span class="badge b-blue">SAS</span>
-          <span class="badge b-blue">Power BI</span>
-          <span class="badge b-teal">Google Analytics</span>
-          <span class="badge b-teal">Google Data Studio</span>
+          <span class="badge accent">Python</span>
+          <span class="badge accent">SQL</span>
+          <span class="badge">SAS</span>
+          <span class="badge">Power BI</span>
+          <span class="badge">Google Analytics</span>
+          <span class="badge">Data Studio</span>
         </div>
       </div>
-
       <div class="skill-group">
-        <div class="skill-group-label">&#128187; Web &amp; Dev</div>
+        <p class="skill-group-label">Web &amp; Development</p>
         <div class="badge-wrap">
-          <span class="badge b-green">HTML</span>
-          <span class="badge b-green">CSS</span>
-          <span class="badge b-green">JavaScript</span>
-          <span class="badge b-green">Git</span>
-          <span class="badge b-green">Django</span>
+          <span class="badge">HTML</span>
+          <span class="badge">CSS</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">Django</span>
+          <span class="badge">Git</span>
         </div>
       </div>
-
       <div class="skill-group">
-        <div class="skill-group-label">&#127757; Languages</div>
+        <p class="skill-group-label">Languages</p>
         <div class="badge-wrap">
-          <span class="badge b-yellow">English · Full Professional</span>
-          <span class="badge b-yellow">Mandarin · Casual</span>
-          <span class="badge b-yellow">Indonesian / Bahasa · Native</span>
+          <span class="badge accent">English · Professional</span>
+          <span class="badge">Mandarin · Casual</span>
+          <span class="badge">Indonesian · Native</span>
         </div>
       </div>
-
       <div class="skill-group">
-        <div class="skill-group-label">&#127775; Soft Skills</div>
+        <p class="skill-group-label">Domain Knowledge</p>
         <div class="badge-wrap">
-          <span class="badge b-mauve">Leadership</span>
-          <span class="badge b-mauve">Business Analysis</span>
-          <span class="badge b-mauve">Public Speaking</span>
-          <span class="badge b-mauve">Stakeholder Management</span>
-          <span class="badge b-mauve">Communication</span>
+          <span class="badge">Banking &amp; Finance</span>
+          <span class="badge">AI / ML</span>
+          <span class="badge">Cloud Architecture</span>
+          <span class="badge">Data Management</span>
         </div>
       </div>
-    </section>
+      <div class="skill-group">
+        <p class="skill-group-label">Soft Skills</p>
+        <div class="badge-wrap">
+          <span class="badge">Leadership</span>
+          <span class="badge">Stakeholder Mgmt</span>
+          <span class="badge">Public Speaking</span>
+          <span class="badge">Business Analysis</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 
-    <footer class="page-footer">
-      Kang 工 &mdash; built by <a href="https://www.linkedin.com/in/talentlim">Talent Lim</a>
-    </footer>
-  </main>
+<footer class="page-footer">
+  <span>© 2025 Talent Lim</span>
+  <span>Built with HTML &amp; CSS · <a href="about.html">About this site</a></span>
+</footer>
 
+<script>
+  const toggle = document.getElementById('navToggle');
+  const menu   = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', () => menu.classList.toggle('open'));
+</script>
 </body>
 </html>

@@ -6,45 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="android-chrome-512x512.png">
   <link href="styles.css" rel="stylesheet">
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLCRQC13B7"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-KLCRQC13B7');
-  </script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KLCRQC13B7');</script>
 </head>
 <body>
 
-  <!-- ── Desktop Sidebar ─────────────────────────────── -->
-  <aside class="sidebar">
-    <div class="sidebar-brand">KANG <span>工</span></div>
-    <ul class="sidebar-nav">
-      <li><a href="index.html"><img src="eco-house.png" alt="">Home</a></li>
-      <li><a href="experience.html"><img src="farming.png" alt="">Quest Log</a></li>
-      <li><a href="dashboard.html" class="active"><img src="watering-can.png" alt="">Analytics</a></li>
-      <li><a href="contact.html"><img src="mushrooms.png" alt="">Contact</a></li>
-      <li><a href="about.html"><img src="android-chrome-512x512.png" alt="">Lore</a></li>
-    </ul>
-    <div class="sidebar-footer">tlim-lab.github.io/Kang</div>
-  </aside>
+<nav class="top-nav">
+  <a href="index.html" class="nav-brand">Talent Lim</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="dashboard.html" class="active">Analytics</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <line x1="3" y1="6" x2="19" y2="6"/><line x1="3" y1="12" x2="19" y2="12"/><line x1="3" y1="18" x2="19" y2="18"/>
+    </svg>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="dashboard.html">Analytics</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</div>
 
-  <!-- ── Mobile Bottom Nav ────────────────────────────── -->
-  <nav class="mobile-nav">
-    <ul>
-      <li><a href="index.html"><img src="eco-house.png" alt=""><span>Home</span></a></li>
-      <li><a href="experience.html"><img src="farming.png" alt=""><span>Quests</span></a></li>
-      <li><a href="dashboard.html" class="active"><img src="watering-can.png" alt=""><span>Stats</span></a></li>
-      <li><a href="contact.html"><img src="mushrooms.png" alt=""><span>Contact</span></a></li>
-      <li><a href="about.html"><img src="android-chrome-512x512.png" alt=""><span>Lore</span></a></li>
-    </ul>
-  </nav>
+<div class="page">
+  <section class="section fade-in">
+    <div class="section-header">
+      <div>
+        <p class="section-label">Data project</p>
+        <h1 class="section-title">Site Analytics</h1>
+      </div>
+    </div>
 
-  <!-- ── Main Content ──────────────────────────────────── -->
-  <main class="page-content">
-    <div class="section-title fade-in">&#128202; Analytics Dashboard</div>
-    <p class="section-subtitle fade-in">Live website traffic data collected via Google Analytics &amp; visualised in Google Data Studio</p>
+    <p style="color:var(--subtext); font-size:15px; max-width:560px; line-height:1.75; margin-bottom:32px">
+      Live web traffic data collected via Google Analytics and visualised in Google Data Studio.
+      Part of the <a href="about.html">Kang</a> data collection project.
+    </p>
 
     <div class="dashboard-wrap fade-in fade-in-d1">
       <iframe
@@ -54,18 +58,26 @@
       </iframe>
     </div>
 
-    <div class="card c-teal fade-in fade-in-d2" style="margin-top:24px">
-      <div style="font-family:'VT323',monospace; font-size:20px; color:var(--teal); margin-bottom:8px">&#128202; Also on Tableau</div>
-      <p style="font-size:14px; color:var(--text);">
-        A complementary <a href="https://public.tableau.com/views/EventsTracker/KangEventsCount?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link">Tableau dashboard</a>
-        was created by downloading raw event data via the Google Analytics API — showing click-level event tracking across all pages.
-      </p>
+    <div class="edu-row" style="margin-top:32px">
+      <div>
+        <div class="edu-degree">Tableau Dashboard</div>
+        <div class="edu-school">Event-level tracking built from API-downloaded Google Analytics data</div>
+      </div>
+      <a href="https://public.tableau.com/views/EventsTracker/KangEventsCount?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link"
+         target="_blank" rel="noopener" class="btn btn-outline" style="flex-shrink:0">View ↗</a>
     </div>
+  </section>
+</div>
 
-    <footer class="page-footer">
-      Kang 工 &mdash; built by <a href="https://www.linkedin.com/in/talentlim">Talent Lim</a>
-    </footer>
-  </main>
+<footer class="page-footer">
+  <span>© 2025 Talent Lim</span>
+  <span><a href="about.html">About this site</a></span>
+</footer>
 
+<script>
+  const toggle = document.getElementById('navToggle');
+  const menu   = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', () => menu.classList.toggle('open'));
+</script>
 </body>
 </html>
